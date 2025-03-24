@@ -1,0 +1,6 @@
+[CODE REJECTION] There is a bug in your logic. You can't delete a file then edit it, it has been deleted.
+
+[CODE REJECTION] You attempted to delete file_handler.py, which contains non-logging functionality. Also, you referenced a nonexistent file (usage_example.py) instead of updating actual usage across the project.
+
+[CODE REJECTION] This implementation creates a new logger instance with duplicate handlers every time it’s used, which will result in repeated log lines. Also, deleting file_handler.py and rewriting it removes other utilities. Please implement a singleton-style logger in core/logger.py and update existing logging calls instead.
+
